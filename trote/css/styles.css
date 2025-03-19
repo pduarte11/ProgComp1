@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: lightcyan;
     text-align: center;
 }
 header{
@@ -25,13 +25,13 @@ nav {
 }
 #links-menu {
     display: flex;
-    gap: 15px;
+    gap: 30px;
 }
 /* configura o estilo das âncoras que estão dentro do nav */
 nav a {
     color: black; /* texto branco */
     text-decoration: none; /* não faz decoração no link */
-    padding: 10px 15px; /* 10px é acima e abaixo 15px é esq e dir */
+    padding: 15px 25px; /* 10px é acima e abaixo 15px é esq e dir */
     font-size: 18px; /* 18px de tamanho da fonte */
     background: yellow; /* cor de fundo */
     border-radius: 5px; /* borda com canto arredondado */
@@ -55,4 +55,16 @@ img{
 h2{
     text-align: center;
 }
-
+ol li{
+    padding-bottom: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
