@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: lightcyan;
+    background-color: rgb(224, 250, 255);
     text-align: center;
 }
 header{
@@ -15,7 +15,7 @@ header{
 }
 
 nav {
-    background-color: #00b3ff;
+    background-color: #00c3ff;
     padding: 10px;
     display: flex; /* Flex Boxing */
     /* alinhamento na horizontal - espaço entre os links */
@@ -67,4 +67,27 @@ td {
     border: 1px solid black;
     padding: 8px;
     text-align: left;
+}
+.laranja{
+    background-color: orange;
+    color: white;
+}
+.preto{
+    background-color: black;
+    color: white;
+}
+.roxo{
+    background-color: purple;
+    color: white;
+}
+.verde{
+    background-color: green;
+    color: white;
+}
+.vermelho{
+    background-color: red;
+    color: white;
+}
+.azul{
+    background-color: #00c3ff;
 }
