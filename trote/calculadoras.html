@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trote Solidário - 2025</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>
+        <header> <!-- cabeçalho do corpo da página -->
+            Trote Solidário - 2025
+        </header>
+        <nav>
+            <div id="links-menu">
+                <a href="index.html"> Home </a>
+                <a href="introducao.html"> Introdução </a>
+                <a href="objetivo.html"> Objetivo </a>
+                <a href="formato.html"> Formato </a>
+                <a href="gincana.html"> Gincana </a>
+                <a href="integracao.html"> Integração </a>
+                <a href="observacoes.html"> Observações </a>
+                <a href="calculadoras.html"> Calculadoras </a>
+            </div>
+            <img src="images/troteimg.jpg" alt="Trote Solidário">
+        </nav>
+        <div class="container"><!--class poder reutilizar o estilo, id nao, pois só há um ID-->
+            <h2>Calculadoras</h2>
+            <form>
+                <div class="campos">
+                    <label>Mascote do Time</label>
+                    <input type="number"id="mascote">
+                </div>
+                <div class="campos">
+                    <label>Homenagem a um atleta</label>
+                    <input type="number" id="homenagem">
+                </div>
+                <div class="campos">
+                    <button type="button" onclick="calcular()">Calcular</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

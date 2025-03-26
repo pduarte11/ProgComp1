@@ -91,3 +91,11 @@ td {
 .azul{
     background-color: #00c3ff;
 }
+.quadro{
+    background-color: gray;
+    border-radius: 10px;
+    padding: 1px 10px;
+}
+.campos{
+    margin-bottom: 20px;
+}
