@@ -99,3 +99,10 @@ td {
 .campos{
     margin-bottom: 20px;
 }
+.obs{
+    margin: 0;
+    padding: 0;
+    color: rgb(126, 126, 126);
+    text-align: justify;
+    font-size: small;
+}
