@@ -1,21 +1,18 @@
 function calcular(){
     // declaração variável sem tipo
-   let soma = 0
+   let soma, mascote, leite, homenagem, kit, suplemento, equipe
    // recupera o valor da ação social digitado
-   let acaoSocial = document.getElementById("acaoSocial").value
-   soma = soma + Number(acaoSocial)
+   acaoSocial = document.getElementById("acaoSocial").value
    // recupera o valor da homenagem digitado
-   let homenagem = document.getElementById("homenagem").value
-   soma = soma + Number(homenagem)
+    homenagem = document.getElementById("homenagem").value
    // recupera a qtde de litros de leite
-   let leite = document.getElementById("leite").value
-   soma = soma + (2 * Number(leite))
+   leite = document.getElementById("leite").value
    // recupera a qtde de kits 
-   let kit = Number(document.getElementById("kit").value)
+   kit = Number(document.getElementById("kit").value)
    // recupera a cor da equipe
-   let equipe = document.getElementById("equipe").value
+   equipe = document.getElementById("equipe").value
     // recupera a qtde de latas de suplemento
-   let suplemento = document.getElementById("suplemento").value
+   suplemento = document.getElementById("suplemento").value
    let pontosKitSupl = 0 // guarda pontuação de kit + supl
    if (equipe == "Laranja"){
        // equipe é laranja
@@ -36,5 +33,5 @@ function calcular(){
    soma = soma + pontosKitSupl
   
    // devolve o resultado para o HTML
-   document.getElementById("soma").innerHTML = `R$ ${soma.toFixed(2)}`
+   document.getElementById("soma").innerHTML = `A soma é ${soma}`
 }
