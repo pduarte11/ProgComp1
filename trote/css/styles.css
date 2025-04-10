@@ -68,6 +68,11 @@ td {
     padding: 8px;
     text-align: left;
 }
+th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
 .laranja{
     background-color: orange;
     color: white;
@@ -89,7 +94,7 @@ td {
     color: white;
 }
 .azul{
-    background-color: #00c3ff;
+    background-color: #00afe4;
 }
 .quadro{
     background-color: gray;
