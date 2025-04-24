@@ -1,26 +1,32 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(224, 250, 255);
-  text-align: center;
+  font-family: Arial, sans-serif; /* Fonte mais limpa e moderna */
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove o padding padrão */
+  background-color: rgb(200, 246, 255); /* Cor de fundo suave (azul claro) */
+  text-align: center; /* Centraliza o texto na página */
+  color: #333; /* Cor do texto (um tom suave de preto para melhor leitura) */
+  line-height: 1.6; /* Melhor espaçamento entre linhas para mais legibilidade */
 }
 header {
-  background: rgb(0, 38, 254);
-  color: white;
-  /* espaçamento interno 15px acim e abaixo, e 0px esquerda e direta*/
-  padding: 30px 0;
-  font-size: 40px;
+  background: rgb(23, 0, 156); /* Cor de fundo do header */
+  color: rgb(255, 226, 60); /* Cor do texto */
+  padding: 30px 0; /* Espaçamento interno (acima e abaixo 30px, esquerda e direita 0px) */
+  font-size: 40px; /* Tamanho da fonte */
+  text-shadow: 3px 3px 10px rgb(0, 0, 0); /* Sombra no texto */
+  text-align: center; /* Centralizar o texto */
+  font-weight: bold; /* Negrito para destacar */
+  border-bottom: 4px solid rgb(255, 238, 0); /* Linha de borda na parte inferior */
+  transition: all 0.3s ease-in-out; /* Transição suave para interações */
 }
-
 nav {
-  background-color: #00c3ff;
+  background-color: #00ace0;
   padding: 10px;
   display: flex; /* Flex Boxing */
   /* alinhamento na horizontal - espaço entre os links */
   justify-content: space-between;
   /* alinhamento na vertical */
   align-items: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.205);
 }
 #links-menu {
   display: flex;
@@ -28,19 +34,40 @@ nav {
 }
 /* configura o estilo das âncoras que estão dentro do nav */
 nav a {
-  color: black; /* texto branco */
-  text-decoration: none; /* não faz decoração no link */
-  padding: 15px 25px; /* 10px é acima e abaixo 15px é esq e dir */
-  font-size: 18px; /* 18px de tamanho da fonte */
-  background: yellow; /* cor de fundo */
-  border-radius: 5px; /* borda com canto arredondado */
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.404);
+  color: #333; /* Cor do texto (um tom mais suave de preto) */
+  text-decoration: none; /* Remover o sublinhado */
+  padding: 15px 25px; /* Espaçamento em torno do texto */
+  font-size: 18px; /* Tamanho da fonte */
+  background: rgb(255, 252, 65); /* Cor de fundo */
+  border-radius: 8px; /* Borda mais arredondada */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra mais suave */
+  font-weight: bold; /* Fonte em negrito para mais destaque */
+  text-transform: uppercase; /* Texto em maiúsculas para dar mais impacto */
+  transition: all 0.3s ease; /* Transição suave para efeitos */
+}
+
+nav a:hover {
+  background: rgb(255, 204, 0); /* Cor de fundo mais forte ao passar o mouse */
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte para o efeito de hover */
+  transform: translateY(-3px); /* Eleva o link para criar um efeito de "flutuar" */
+}
+
+nav a:active {
+  transform: translateY(0); /* Reverte o efeito de elevação quando o link é clicado */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra mais suave no clique */
 }
 img {
   width: 150px;
   height: auto;
   margin-right: 80px;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 10px 16px rgba(0, 0, 0, 0.25);
 }
 .container {
   width: 80%;
@@ -51,32 +78,42 @@ img {
   border-radius: 10px;
   text-align: justify;
 }
-h2 {
-  text-align: center;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; /* Títulos em negrito */
+  text-transform: uppercase; /* Títulos em maiúsculas */
+  color: rgb(23, 0, 156); /* Cor dos títulos para dar destaque */
 }
-h3{
-  text-align: center;
+p {
+  font-size: 16px; /* Tamanho da fonte para o parágrafo */
+  color: #555; /* Cor mais suave para o texto de parágrafos */
 }
-h4 {
-  text-align: center;
-}
-ol li {
+ol li ul {
   padding-bottom: 10px;
 }
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-td {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: left;
-}
+
 th {
-  border: 1px solid black;
-  padding: 8px;
+  background-color: #0056b3;
+  color: white;
+  padding: 12px;
   text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #000000;
+}
+
+td {
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: left;
 }
 .laranja {
   background-color: orange;
@@ -99,15 +136,22 @@ th {
   color: white;
 }
 .azul {
-  background-color: #00afe4;
+  background-color: #007bffa4;
 }
 .quadro {
-  border-radius: 10px;
-  padding: 1px 10px;
-  border: solid 1px black;
+  border-radius: 15px; /* Cantos mais arredondados */
+  padding: 20px 30px; /* Mais espaço interno */
+  border: 1px solid #444; /* Cor da borda um pouco mais suave */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
+  margin: 20px ; /* Centraliza e dá espaço em cima e embaixo */
+  max-width: 600px; /* Limita a largura para melhor leitura */
+  transition: all 0.3s ease; /* Suavidade para qualquer mudança visual */
 }
 .campos {
-  margin-bottom: 20px;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Espaço entre o label e o input */
 }
 .obs {
   margin: 0;
@@ -116,9 +160,51 @@ th {
   text-align: justify;
   font-size: small;
 }
-.cinza{
+.cinza {
   background-color: lightgray;
 }
-.amarelo{
+.amarelo {
   background-color: rgb(255, 255, 185);
+}
+.calculo{
+  display: inline-block;
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 20px; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte */
+  color: rgb(0, 0, 0); /* Cor do texto */
+  background-color: #a7a7a7; /* Cor de fundo (escura) */
+  border-radius: 10px; /* Borda arredondada */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra no texto */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra na caixa */
+  transition: all 0.3s ease; /* Animação suave */
+  margin-top: 20px;
+}
+.calculo:hover {
+  background-color: #4caf50; /* Cor de fundo ao passar o mouse */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais intensa ao passar o mouse */
+}
+
+.calculo:active {
+  transform: scale(0.98); /* Efeito de clique */
+}
+button {
+  background-color: #0056b3; /* Azul escuro */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #007bff; /* Azul mais claro no hover */
+  transform: scale(1.03); /* Leve zoom ao passar o mouse */
+}
+
+button:active {
+  transform: scale(0.97); /* Feedback visual no clique */
 }
