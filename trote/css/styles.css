@@ -34,6 +34,7 @@ nav a {
   font-size: 18px; /* 18px de tamanho da fonte */
   background: yellow; /* cor de fundo */
   border-radius: 5px; /* borda com canto arredondado */
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.404);
 }
 img {
   width: 150px;
@@ -51,6 +52,12 @@ img {
   text-align: justify;
 }
 h2 {
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+h4 {
   text-align: center;
 }
 ol li {
@@ -95,9 +102,9 @@ th {
   background-color: #00afe4;
 }
 .quadro {
-  background-color: gray;
   border-radius: 10px;
   padding: 1px 10px;
+  border: solid 1px black;
 }
 .campos {
   margin-bottom: 20px;
@@ -108,4 +115,10 @@ th {
   color: rgb(126, 126, 126);
   text-align: justify;
   font-size: small;
+}
+.cinza{
+  background-color: lightgray;
+}
+.amarelo{
+  background-color: rgb(255, 255, 185);
 }
