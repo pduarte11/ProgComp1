@@ -1,113 +1,111 @@
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(224, 250, 255);
-    text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(224, 250, 255);
+  text-align: center;
 }
-header{
-    background: rgb(0, 38, 254);
-    color: white;
-    /* espaçamento interno 15px acim e abaixo, e 0px esquerda e direta*/
-    padding: 30px 0; 
-    font-size: 40px;
+header {
+  background: rgb(0, 38, 254);
+  color: white;
+  /* espaçamento interno 15px acim e abaixo, e 0px esquerda e direta*/
+  padding: 30px 0;
+  font-size: 40px;
 }
 
 nav {
-    background-color: #00c3ff;
-    padding: 10px;
-    display: flex; /* Flex Boxing */
-    /* alinhamento na horizontal - espaço entre os links */
-    justify-content: space-between;
-    /* alinhamento na vertical */
-    align-items: center;
+  background-color: #00c3ff;
+  padding: 10px;
+  display: flex; /* Flex Boxing */
+  /* alinhamento na horizontal - espaço entre os links */
+  justify-content: space-between;
+  /* alinhamento na vertical */
+  align-items: center;
 }
 #links-menu {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 /* configura o estilo das âncoras que estão dentro do nav */
 nav a {
-    color: black; /* texto branco */
-    text-decoration: none; /* não faz decoração no link */
-    padding: 15px 25px; /* 10px é acima e abaixo 15px é esq e dir */
-    font-size: 18px; /* 18px de tamanho da fonte */
-    background: yellow; /* cor de fundo */
-    border-radius: 5px; /* borda com canto arredondado */
-
+  color: black; /* texto branco */
+  text-decoration: none; /* não faz decoração no link */
+  padding: 15px 25px; /* 10px é acima e abaixo 15px é esq e dir */
+  font-size: 18px; /* 18px de tamanho da fonte */
+  background: yellow; /* cor de fundo */
+  border-radius: 5px; /* borda com canto arredondado */
 }
-img{
-    width: 150px;
-    height: auto;
-    margin-right: 80px;
-    border-radius: 10px;
+img {
+  width: 150px;
+  height: auto;
+  margin-right: 80px;
+  border-radius: 10px;
 }
-.container{
-    width: 80%;
-    background: white;
-    border-radius: 10px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: justify;
+.container {
+  width: 80%;
+  background: white;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: justify;
 }
-h2{
-    text-align: center;
+h2 {
+  text-align: center;
 }
-ol li{
-    padding-bottom: 10px;
+ol li {
+  padding-bottom: 10px;
 }
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
 }
 th {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: center;
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
 }
-.laranja{
-    background-color: orange;
-    color: black;
+.laranja {
+  background-color: orange;
+  color: black;
 }
-.preto{
-    background-color: black;
-    color: white;
+.preto {
+  background-color: black;
+  color: white;
 }
-.roxo{
-    background-color: purple;
-    color: white;
+.roxo {
+  background-color: purple;
+  color: white;
 }
-.verde{
-    background-color: green;
-    color: white;
+.verde {
+  background-color: green;
+  color: white;
 }
-.vermelho{
-    background-color: red;
-    color: white;
+.vermelho {
+  background-color: red;
+  color: white;
 }
-.azul{
-    background-color: #00afe4;
+.azul {
+  background-color: #00afe4;
 }
-.quadro{
-    background-color: gray;
-    border-radius: 10px;
-    padding: 1px 10px;
+.quadro {
+  background-color: gray;
+  border-radius: 10px;
+  padding: 1px 10px;
 }
-.campos{
-    margin-bottom: 20px;
+.campos {
+  margin-bottom: 20px;
 }
-.obs{
-    margin: 0;
-    padding: 0;
-    color: rgb(126, 126, 126);
-    text-align: justify;
-    font-size: small;
+.obs {
+  margin: 0;
+  padding: 0;
+  color: rgb(126, 126, 126);
+  text-align: justify;
+  font-size: small;
 }
